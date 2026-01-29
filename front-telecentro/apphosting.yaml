@@ -1,0 +1,6 @@
+env:
+  - variable: NEXT_PUBLIC_BACKEND
+    value: voice-ai-server-224237244779.us-central1.run.app
+    availability:
+      - BUILD
+      - RUNTIME

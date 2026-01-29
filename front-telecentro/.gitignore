@@ -1,0 +1,114 @@
+# ############################################################################
+# Archivo .gitignore para el proyecto de Microservicios E-commerce
+# ############################################################################
+
+# ----------------------------------------------------------------------------
+# General: Archivos de Sistema Operativo, IDEs y editores
+# ----------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos de log
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Configuraciones de IDEs
+.idea/
+.vscode/
+*.suo
+*.user
+*.sln.docstates
+
+# ----------------------------------------------------------------------------
+# Go (frontend, productcatalogservice, shippingservice, checkoutservice)
+# ----------------------------------------------------------------------------
+# Binarios y ejecutables
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# Directorio de dependencias (si se usa 'go mod vendor')
+vendor/
+
+# ----------------------------------------------------------------------------
+# Python (emailservice, recommendationservice, loadgenerator)
+# ----------------------------------------------------------------------------
+# Archivos compilados
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+.env
+.venv
+env/
+venv/
+
+# Reportes de tests y coverage
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Archivos generados por Protocol Buffers (si se generan en el build)
+# Descomentar si no se quieren versionar los archivos generados de protobuf
+# *_pb2.py
+# *_pb2_grpc.py
+
+# ----------------------------------------------------------------------------
+# Node.js (currencyservice, paymentservice)
+# ----------------------------------------------------------------------------
+# Dependencias
+node_modules/
+
+# Archivos de entorno
+.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ----------------------------------------------------------------------------
+# C# / .NET (cartservice)
+# ----------------------------------------------------------------------------
+# Directorios de compilación
+[Bb]in/
+[Oo]bj/
+
+# Archivos de usuario de Visual Studio
+*.user
+*.suo
+
+# ----------------------------------------------------------------------------
+# Java / Maven / Gradle (adservice)
+# ----------------------------------------------------------------------------
+# Directorios de compilación
+target/
+build/
+out/
+
+# Archivos generados
+*.class
+*.jar
+*.war
+*.ear
+
+# ----------------------------------------------------------------------------
+# Kubernetes / Kustomize / Terraform
+# ----------------------------------------------------------------------------
+# Archivos de estado de Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# ----------------------------------------------------------------------------
+# Otros
+# ----------------------------------------------------------------------------
+# Archivos de dependencias de herramientas
+/release/
